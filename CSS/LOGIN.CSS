@@ -1,0 +1,85 @@
+body {
+    background-image: url("../IMAGES/laptop-food-liquids.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.lgnfrm {
+    background-position: center bottom, left top;
+    padding: 15px;
+    justify-content: center;
+}
+
+.navbar navbar-default navbar-fixed-top {
+    background-color: #2980B9;
+    color: #EAF2F8;
+}
+
+.pull-right {
+    color: #fafbfc;
+    font-family: Times;
+    font-size: 24px;
+    display: inline;
+}
+
+.vtp {
+    margin-right: 20px;
+}
+
+input[type=text],
+input[type=Password],
+select {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solidc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 0;
+    border: 50px;
+    border-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #302f2f;
+}
+
+.cntr {
+    justify-content: center;
+    float: center;
+    margin-left: 35%;
+}
+
+.head {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1%;
+}
+
+hr.new1 {
+    border-top: 1px solid red;
+}
+
+.box {
+    height: 350px;
+    width: 350px;
+    margin: 3%;
+    justify-content: center;
+    background-color: black;
+    color: azure;
+    opacity: 0.9;
+    float: center;
+}

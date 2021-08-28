@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>VTOMP Login</title>
+    <link rel="stylesheet" href="CSS\LOGIN.CSS">
+</head>
+
+<body style="background-image: url('IMAGES/laptop-food-liquids.jpg'); background-repeat: no-repeat;background-size: cover;">
+    <div class="background">
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #2980B9;color: #EAF2F8;">
+            <img src="IMAGES/vitlogo.png" class="img-responsive pull-left" alt="User Image" width="200 px" ; height="69px" style="margin-left: 30px;">
+            <label class="pull-right" style="float:right;"><h3 class="vtp">VTOMP (Vellore Campus)</h3></label>
+        </nav>
+        <br>
+        <br>
+
+        <div class="cntr">
+            <div class="box">
+                <div class="head">
+                    <h4>VTOMP Login</h4>
+                    <HR width="100%">
+                </div>
+                <form class="lgnfrm" name="f1" action="authentication.php" onsubmit="return validation()" method="POST">
+                    <input type="text" id="user" name="user" placeholder="Registeration ID" />
+                    <BR>
+                    <input type="Password" placeholder="Password..." id="pass" name="pass" />
+                    <BR>
+                    <label for="priv"></label>
+                    <select id="priv" name="priv">
+                        <option value="Select any one">Select any one</option>
+                        <option value="Student">Student</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Caterer">Caterer</option>
+                    </select>
+                    <BR>
+                    <input type="submit" id="btn" value="Login" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validation() {
+            var id = document.f1.user.value;
+            var ps = document.f1.pass.value;
+            var pv = document.f1.priv.value;
+            if (id.length == "" && ps.length == "") {
+                alert("User Name and Password fields are empty");
+                return false;
+            } else {
+                if (id.length == "") {
+                    alert("User Name is empty");
+                    return false;
+                }
+                if (ps.length == "") {
+                    alert("Password field is empty");
+                    return false;
+                }
+                if (pv == "Select any one") {
+                    alert("Privelege field has not been selected");;
+                    return false;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
